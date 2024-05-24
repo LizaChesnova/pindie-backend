@@ -4,3 +4,4 @@
 
 IP-адрес: 158.160.170.31
 
+Мой бэкенд: https://pindieadminpanel.nomoredomainswork.ru
