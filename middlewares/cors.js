@@ -1,6 +1,5 @@
-// Вместо нашего адреса вставь свой
-// Можно ещё не удалять адреса с localhost, но мы удалили для краткости
-const allowedCors = ["https://pindiegamespanel.nomoredomainswork.ru"];
+
+const allowedCors = ["https://pindiegamespanel.nomoredomainswork.ru/"];
 
 function cors(req, res, next) {
   const { origin } = req.headers;
