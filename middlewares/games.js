@@ -116,11 +116,10 @@ const checkIfUsersAreSafe = async (req, res, next) => {
 const checkIsGameExists = async (req, res, next) => {
   
   const isInArray = req.gamesArray.find((game) => {
-    return req.body.name === game.name;
+    return req.body.title === game.title;
   });
   if (isInArray) {
-    res.setHeader("Content-Type", "application/json");
-    res.status(400).send(JSON.stringify({ message: "Категория с таким названием уже существует" }));
+    res.status(400).send({ message: "Игра с таким названием уже существует" });
   } else {
 
     next();
